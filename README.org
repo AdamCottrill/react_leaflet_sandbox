@@ -1,0 +1,51 @@
+
++ study area map
+  + radio button select lake - change extent of maps
+
+  + form to capture study area as point or geojson
+  + map to show study area
+  + modal map to capture geometry from user's mouse click
+  + modal - fetch spatial attributes from existing project
+
++ space(s) map
+  + if study area is a point, re-use coordinates for space (there can
+    be only one).  Prompt for space name and description.
+  +
+  + if polygon, provide radio buttons for:
+    + Spaces are points
+    + Spaces are polgyons
+
+  + if points, repeat existing wizard
+    + all points must be within study area
+
+  + if polygons, re-use study region widget
+    + provide input for lat-lon as point
+    + text input for geosjon input
+    + plot geometry map
+    + popup for map canvas - zoomed to lake bounds
+    + all polygons must be within the study area
+    + space polygons cannot overlap
+
+
++ subspace(s) map
+  + if spaces are points, re-use coordinates for space (there can be
+    only one subpsace for each space).  Prompt for subspace name and
+    description.
+
+  + provide radio buttons for:
+    + subspaces are points
+    + subspaces are polgyons
+
+ + form array for each Space:
+  + if subspaces are points,
+    + all subspace points must be within study area
+    + form array for lat-lon, click-able map
+
+  + if polygons, re-use study region widget
+    + provide input for lat-lon as point
+    + text input for geosjon input
+    + plot geometry map
+    + popup for map canvas - zoomed to bounds of associated space (add
+      space as polygon layer for context)
+    + all polygons must be within the geom of associated space.
+    + subspace polygons cannot overlap

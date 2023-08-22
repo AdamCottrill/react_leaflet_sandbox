@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //import App from "./App";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "leaflet/dist/leaflet.css";
 import "./index.css";
 
 import { StudyArea } from "./pages/StudyArea";
